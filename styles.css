@@ -1,0 +1,201 @@
+@import url("https://fonts.googleapis.com/css2?family=Economica:ital,wght@0,400;0,700;1,400;1,700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+header {
+  text-align: center;
+  background-image: url("./assets/img/1_hero/JPG/hero_bg.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  padding: 0 160px 0 160px;
+}
+header h1 {
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+  font-size: 96px;
+  text-transform: uppercase;
+  color: white;
+  margin-top: 20vh;
+}
+header h2 {
+  font-family: "Raleway", sans-serif;
+  font-size: 24px;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: white;
+}
+header nav {
+  display: flex;
+  justify-content: space-between;
+  width: 90vw;
+  align-items: center;
+  height: 112px;
+}
+header nav .left-menu img:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+header nav .right-menu {
+  width: 50%;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+header nav a {
+  text-decoration: none;
+  font-family: "Raleway", sans-serif;
+  font-size: 24px;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: white;
+}
+header nav .right-menu > :last-child {
+  background-color: #9f0908;
+  border: 1px solid white;
+  border-radius: 10%;
+  padding: 0.5rem;
+}
+header nav .right-menu a:hover {
+  transform: scale(1.1);
+  color: #675e54;
+}
+header nav .right-menu > :last-child:hover {
+  background-color: #675e54;
+  color: white;
+}
+
+.how-to-order {
+  margin: 120px auto 120px auto;
+  width: 80vw;
+}
+.how-to-order h3 {
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+  font-size: 80px;
+  text-align: center;
+  color: #9f0908;
+  text-transform: uppercase;
+  margin-bottom: 64px;
+}
+.how-to-order .how-to-order-container {
+  display: flex;
+  justify-content: space-between;
+}
+.how-to-order .how-to-order-container figure {
+  width: 20vw;
+}
+.how-to-order .how-to-order-container figure img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 16px;
+}
+.how-to-order .how-to-order-container figure figcaption {
+  font-family: "Economica", sans-serif;
+  font-weight: bold;
+  font-size: 56px;
+  text-align: center;
+}
+
+.our-menu {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  padding-right: 20vw;
+  padding-left: 20vw;
+  background-image: url("./assets/img/3_section_our_menu/JPG/section_our_menu_bg.jpg");
+  background-size: cover;
+  width: 100vw;
+}
+.our-menu h3 {
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+  font-size: 80px;
+  text-align: center;
+  color: #9f0908;
+  text-transform: uppercase;
+  margin-bottom: 64px;
+}
+.our-menu figure {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.our-menu figure figcaption th {
+  font-family: "Economica", sans-serif;
+  font-weight: bold;
+  font-size: 56px;
+}
+.our-menu figure figcaption td {
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+  font-size: 32px;
+  color: #675e54;
+}
+
+.find-us-at {
+  padding-top: 120px;
+}
+.find-us-at h3 {
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+  font-size: 80px;
+  text-align: center;
+  color: #9f0908;
+  text-transform: uppercase;
+}
+.find-us-at figure {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 8px;
+  margin-bottom: 64px;
+}
+.find-us-at figure > img {
+  width: 24px;
+  margin-right: 0.5rem;
+}
+.find-us-at figure > figcaption {
+  font-size: 24px;
+  font-family: "Raleway", sans-serif;
+  font-size: 24px;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+.find-us-at figure > figcaption a {
+  text-decoration: none;
+}
+.find-us-at iframe {
+  display: block;
+  margin: 0 auto;
+  width: 100vw;
+  margin-bottom: 2rem;
+}
+
+footer {
+  background-color: #0a141e;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 144px;
+}
+footer a img:hover {
+  transform: scale(1.1);
+}
+footer div > * {
+  padding-left: 1rem;
+}
+footer div img:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
