@@ -50,6 +50,7 @@ header nav .right-menu {
   display: flex;
   gap: 1rem;
   align-items: center;
+  justify-content: flex-end;
 }
 header nav a {
   text-decoration: none;
@@ -130,6 +131,9 @@ header nav .right-menu > :last-child:hover {
   align-items: center;
   justify-content: space-around;
 }
+.our-menu figure:nth-child(2n) {
+  flex-direction: row-reverse;
+}
 .our-menu figure figcaption th {
   font-family: "Economica", sans-serif;
   font-weight: bold;
@@ -198,4 +202,100 @@ footer div > * {
 footer div img:hover {
   transform: scale(1.2);
   cursor: pointer;
+}
+
+/*-----------------------------------*/
+@media only screen and (max-width: 1500px) {
+  header {
+    padding: 0 80px;
+  }
+  .how-to-order-container figure {
+    width: 25vw;
+  }
+  .our-menu {
+    padding-right: 10vw;
+    padding-left: 10vw;
+  }
+  footer {
+    height: 120px;
+  }
+}
+/* Media query for screens with a max-width of 950px ### */
+@media only screen and (max-width: 950px) {
+  header {
+    padding: 0 40px;
+  }
+  header h1 {
+    font-size: 48px;
+  }
+  header h2 {
+    font-size: 18px;
+  }
+  header nav .right-menu {
+    transform: scale(0.6);
+    width: 90vw;
+    justify-content: center;
+  }
+  header nav .right-menu > :last-child {
+    display: flex;
+    gap: 0.5rem;
+  }
+  header nav .left-menu {
+    display: none;
+  }
+  header h1 {
+    transform: scale(0.7);
+    margin-top: 10vh;
+  }
+  .how-to-order h3 {
+    transform: scale(0.7);
+  }
+  .how-to-order .how-to-order-container {
+    flex-direction: column;
+  }
+  .how-to-order .how-to-order-container figure {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .our-menu {
+    padding-right: 5vw;
+    padding-left: 5vw;
+  }
+  .our-menu h3 {
+    transform: scale(0.7);
+  }
+  .our-menu figure {
+    display: flex;
+    flex-direction: column;
+  }
+  .our-menu figure:nth-child(2n) {
+    flex-direction: column;
+  }
+  .our-menu figure figcaption {
+    transform: scale(0.7);
+  }
+  #locations {
+    transform: scale(0.7);
+    padding-top: 0px;
+  }
+  #locations figure {
+    width: 80vw;
+    margin: 2rem auto;
+    transform: scale(0.7);
+  }
+  footer {
+    display: flex;
+    justify-content: space-between;
+  }
+  footer a {
+    margin-left: 1rem;
+  }
+  footer div {
+    transform: scale(0.7);
+    display: flex;
+  }
+  footer img {
+    max-width: 200px;
+    height: auto;
+  }
 }
