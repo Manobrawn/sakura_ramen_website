@@ -4,6 +4,10 @@
   padding: 0;
 }
 
+html {
+  overflow-x: hidden;
+}
+
 body {
   display: flex;
   flex-direction: column;
@@ -209,6 +213,13 @@ footer div img:hover {
   header {
     padding: 0 80px;
   }
+  nav .right-menu {
+    flex-grow: 1;
+  }
+  nav .right-menu > :last-child {
+    display: flex;
+    gap: 0.5rem;
+  }
   .how-to-order-container figure {
     width: 25vw;
   }
@@ -220,8 +231,10 @@ footer div img:hover {
     height: 120px;
   }
 }
-/* Media query for screens with a max-width of 950px ### */
 @media only screen and (max-width: 950px) {
+  body {
+    overflow-x: hidden;
+  }
   header {
     padding: 0 40px;
   }

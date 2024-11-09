@@ -50,6 +50,10 @@ $bg-img-our-menu: url("./assets/img/3_section_our_menu/JPG/section_our_menu_bg.j
   padding: 0;
 }
 
+html {
+  overflow-x: hidden;
+}
+
 body {
   display: flex;
   flex-direction: column;
@@ -126,7 +130,6 @@ header {
   .how-to-order-container {
     display: flex;
     justify-content: space-between;
-
     figure {
       width: 20vw;
       img {
@@ -230,6 +233,16 @@ footer {
     padding: 0 80px;
   }
 
+  nav {
+    .right-menu {
+      flex-grow: 1;
+    }
+    .right-menu > :last-child {
+      display: flex;
+      gap: 0.5rem;
+    }
+  }
+
   .how-to-order-container {
     figure {
       width: 25vw;
@@ -246,19 +259,19 @@ footer {
   }
 }
 
-/* Media query for screens with a max-width of 950px ### */
 @media only screen and (max-width: 950px) {
+  body {
+    overflow-x: hidden;
+  }
+
   header {
     padding: 0 40px;
-
     h1 {
       font-size: 48px;
     }
-
     h2 {
       font-size: 18px;
     }
-
     nav {
       .right-menu {
         transform: scale(0.6);
@@ -285,7 +298,6 @@ footer {
     }
     .how-to-order-container {
       flex-direction: column;
-
       figure {
         width: 100%;
         margin-bottom: 20px;
@@ -296,11 +308,9 @@ footer {
   .our-menu {
     padding-right: 5vw;
     padding-left: 5vw;
-
     h3 {
       transform: scale(0.7);
     }
-
     figure {
       display: flex;
       flex-direction: column;
