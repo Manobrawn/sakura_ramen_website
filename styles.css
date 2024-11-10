@@ -67,7 +67,7 @@ header nav a {
 header nav .right-menu > :last-child {
   background-color: #9f0908;
   border: 1px solid white;
-  border-radius: 10%;
+  border-radius: 10px;
   padding: 0.5rem;
 }
 header nav .right-menu a:hover {
@@ -239,7 +239,7 @@ footer div img:hover {
     padding: 0 40px;
   }
   header h1 {
-    font-size: 48px;
+    transform: scale(0.7);
   }
   header h2 {
     font-size: 18px;

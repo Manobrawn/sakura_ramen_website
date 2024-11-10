@@ -104,7 +104,7 @@ header {
     .right-menu > :last-child {
       background-color: $h3-text-color;
       border: 1px solid $light-text-color;
-      border-radius: 10%;
+      border-radius: 10px;
       padding: 0.5rem;
     }
     .right-menu a:hover {
@@ -267,7 +267,7 @@ footer {
   header {
     padding: 0 40px;
     h1 {
-      font-size: 48px;
+      transform: scale(0.7);
     }
     h2 {
       font-size: 18px;
