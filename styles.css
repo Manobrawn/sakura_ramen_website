@@ -239,7 +239,7 @@ footer div img:hover {
     padding: 0 40px;
   }
   header h1 {
-    transform: scale(0.7);
+    font-size: 90px;
   }
   header h2 {
     font-size: 18px;
