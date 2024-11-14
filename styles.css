@@ -21,6 +21,7 @@ header {
   background-size: cover;
   background-position: center;
   height: 100vh;
+  width: 100vw;
   padding: 0 160px 0 160px;
 }
 header h1 {
@@ -40,8 +41,7 @@ header h2 {
 }
 header nav {
   display: flex;
-  justify-content: space-between;
-  width: 90vw;
+  justify-content: space-around;
   align-items: center;
   height: 112px;
 }
@@ -56,6 +56,10 @@ header nav .right-menu {
   align-items: center;
   justify-content: flex-end;
 }
+header nav .left-span {
+  display: flex;
+  gap: 1rem;
+}
 header nav a {
   text-decoration: none;
   font-family: "Raleway", sans-serif;
@@ -63,20 +67,23 @@ header nav a {
   font-weight: normal;
   text-transform: uppercase;
   color: white;
+  display: flex;
+  gap: 1rem;
 }
-header nav .right-menu > :last-child {
+header nav .telefon {
   background-color: #9f0908;
   border: 1px solid white;
   border-radius: 10px;
   padding: 0.5rem;
 }
-header nav .right-menu a:hover {
+header nav .top-buttons:hover {
   transform: scale(1.1);
   color: #675e54;
 }
-header nav .right-menu > :last-child:hover {
-  background-color: #675e54;
+header nav .telefon:hover {
+  transform: scale(1.1);
   color: white;
+  background-color: #675e54;
 }
 
 .how-to-order {
@@ -115,11 +122,12 @@ header nav .right-menu > :last-child:hover {
 .our-menu {
   padding-top: 120px;
   padding-bottom: 120px;
-  padding-right: 20vw;
-  padding-left: 20vw;
   background-image: url("./assets/img/3_section_our_menu/JPG/section_our_menu_bg.jpg");
   background-size: cover;
   width: 100vw;
+  display: flex;
+  flex-direction: column;
+  gap: 10rem;
 }
 .our-menu h3 {
   font-family: "Raleway", sans-serif;
@@ -128,7 +136,6 @@ header nav .right-menu > :last-child:hover {
   text-align: center;
   color: #9f0908;
   text-transform: uppercase;
-  margin-bottom: 64px;
 }
 .our-menu figure {
   display: flex;
@@ -197,6 +204,11 @@ footer {
   justify-content: space-around;
   height: 144px;
 }
+footer div {
+  width: 30vw;
+  display: flex;
+  justify-content: space-between;
+}
 footer a img:hover {
   transform: scale(1.1);
 }
@@ -209,14 +221,11 @@ footer div img:hover {
 }
 
 /*-----------------------------------*/
-@media only screen and (max-width: 1500px) {
+@media (max-width: 1500px) {
   header {
     padding: 0 80px;
   }
-  nav .right-menu {
-    flex-grow: 1;
-  }
-  nav .right-menu > :last-child {
+  nav .telefon {
     display: flex;
     gap: 0.5rem;
   }
@@ -231,12 +240,9 @@ footer div img:hover {
     height: 120px;
   }
 }
-@media only screen and (max-width: 950px) {
+@media (max-width: 950px) {
   body {
     overflow-x: hidden;
-  }
-  header {
-    padding: 0 40px;
   }
   header h1 {
     font-size: 90px;
@@ -244,13 +250,16 @@ footer div img:hover {
   header h2 {
     font-size: 18px;
   }
+  header nav {
+    transform: scale(0.8);
+  }
   header nav .right-menu {
+    width: 100vw;
     transform: scale(0.6);
-    width: 90vw;
     justify-content: center;
     padding-left: 1rem;
   }
-  header nav .right-menu > :last-child {
+  header nav .telefon {
     display: flex;
     gap: 0.5rem;
   }
@@ -274,6 +283,9 @@ footer div img:hover {
   .our-menu {
     padding-right: 5vw;
     padding-left: 5vw;
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
   }
   .our-menu h3 {
     transform: scale(0.7);
@@ -286,7 +298,10 @@ footer div img:hover {
     flex-direction: column;
   }
   .our-menu figure figcaption {
-    transform: scale(0.7);
+    transform: scale(0.6);
+  }
+  .our-menu figure img {
+    width: 280px;
   }
   #locations {
     transform: scale(0.7);
@@ -298,18 +313,32 @@ footer div img:hover {
     transform: scale(0.7);
   }
   footer {
+    height: 80px;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  footer div > * {
+    padding-left: 0;
   }
   footer a {
-    margin-left: 1rem;
+    transform: scale(0.7);
   }
   footer div {
-    transform: scale(0.7);
+    width: 30vw;
     display: flex;
+    justify-content: center;
+    gap: 3rem;
+    transform: scale(0.6);
   }
   footer img {
     max-width: 200px;
     height: auto;
+  }
+}
+@media (min-width: 1400px) {
+  .our-menu figure {
+    width: 60vw;
+    margin: auto;
   }
 }
