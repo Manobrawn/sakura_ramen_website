@@ -48,6 +48,7 @@ $bg-img-our-menu: url("./assets/img/3_section_our_menu/JPG/section_our_menu_bg.j
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 html {
@@ -73,6 +74,7 @@ header {
     h1 {
         @include main-header;
         margin-top: 20vh;
+        margin-bottom: 5%;
     }
 
     h2 {
@@ -226,6 +228,9 @@ footer {
         width: 30vw;
         display: flex;
         justify-content: space-between;
+        img {
+            width: 50px;
+        }
     }
     a img:hover {
         transform: scale(1.1);
@@ -238,8 +243,6 @@ footer {
         cursor: pointer;
     }
 }
-
-/*-----------------------------------*/
 
 @media (max-width: 1500px) {
     header {
@@ -270,29 +273,31 @@ footer {
 }
 
 @media (max-width: 950px) {
-    body {
-        overflow-x: hidden;
-    }
     header {
+        align-items: center;
+        justify-content: space-between;
+        display: flex;
+        flex-direction: column;
         h1 {
             font-size: 90px;
+            margin-block-start: 0.67em;
+            margin-block-end: 0.67em;
         }
         h2 {
             font-size: 18px;
+            padding-bottom: 500px;
         }
         nav {
             transform: scale(0.8);
             .right-menu {
                 width: 100vw;
-                transform: scale(0.6);
-                justify-content: center;
                 padding-left: 1rem;
             }
             .telefon {
                 display: flex;
                 gap: 0.5rem;
             }
-            .left-menu {
+            .left-span {
                 display: none;
             }
         }
@@ -366,6 +371,9 @@ footer {
             justify-content: center;
             gap: 3rem;
             transform: scale(0.6);
+            img {
+                width: 40px;
+            }
         }
         img {
             max-width: 200px;

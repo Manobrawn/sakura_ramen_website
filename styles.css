@@ -2,6 +2,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 html {
@@ -31,6 +32,7 @@ header h1 {
   text-transform: uppercase;
   color: white;
   margin-top: 20vh;
+  margin-bottom: 5%;
 }
 header h2 {
   font-family: "Raleway", sans-serif;
@@ -209,6 +211,9 @@ footer div {
   display: flex;
   justify-content: space-between;
 }
+footer div img {
+  width: 50px;
+}
 footer a img:hover {
   transform: scale(1.1);
 }
@@ -220,7 +225,6 @@ footer div img:hover {
   cursor: pointer;
 }
 
-/*-----------------------------------*/
 @media (max-width: 1500px) {
   header {
     padding: 0 80px;
@@ -241,29 +245,33 @@ footer div img:hover {
   }
 }
 @media (max-width: 950px) {
-  body {
-    overflow-x: hidden;
+  header {
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
   }
   header h1 {
     font-size: 90px;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
   }
   header h2 {
     font-size: 18px;
+    padding-bottom: 500px;
   }
   header nav {
     transform: scale(0.8);
   }
   header nav .right-menu {
     width: 100vw;
-    transform: scale(0.6);
-    justify-content: center;
     padding-left: 1rem;
   }
   header nav .telefon {
     display: flex;
     gap: 0.5rem;
   }
-  header nav .left-menu {
+  header nav .left-span {
     display: none;
   }
   header h1 {
@@ -330,6 +338,9 @@ footer div img:hover {
     justify-content: center;
     gap: 3rem;
     transform: scale(0.6);
+  }
+  footer div img {
+    width: 40px;
   }
   footer img {
     max-width: 200px;
