@@ -32,7 +32,6 @@ header h1 {
   text-transform: uppercase;
   color: white;
   margin-top: 20vh;
-  margin-bottom: 5%;
 }
 header h2 {
   font-family: "Raleway", sans-serif;
@@ -158,6 +157,9 @@ header nav .telefon:hover {
   font-size: 32px;
   color: #675e54;
 }
+.our-menu figure .smaller-table th {
+  padding-right: 112px;
+}
 
 .find-us-at {
   padding-top: 120px;
@@ -209,7 +211,8 @@ footer {
 footer div {
   width: 30vw;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
+  gap: 1rem;
 }
 footer div img {
   width: 50px;
@@ -247,7 +250,6 @@ footer div img:hover {
 @media (max-width: 950px) {
   header {
     align-items: center;
-    justify-content: space-between;
     display: flex;
     flex-direction: column;
   }
@@ -258,7 +260,7 @@ footer div img:hover {
   }
   header h2 {
     font-size: 18px;
-    padding-bottom: 500px;
+    margin-top: -5rem;
   }
   header nav {
     transform: scale(0.8);
@@ -312,39 +314,15 @@ footer div img:hover {
     width: 280px;
   }
   #locations {
-    transform: scale(0.7);
     padding-top: 0px;
   }
   #locations figure {
     width: 80vw;
     margin: 2rem auto;
-    transform: scale(0.7);
-  }
-  footer {
-    height: 80px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-  }
-  footer div > * {
-    padding-left: 0;
-  }
-  footer a {
-    transform: scale(0.7);
-  }
-  footer div {
-    width: 30vw;
-    display: flex;
-    justify-content: center;
-    gap: 3rem;
     transform: scale(0.6);
   }
-  footer div img {
-    width: 40px;
-  }
-  footer img {
-    max-width: 200px;
-    height: auto;
+  #locations h3 {
+    transform: scale(0.7);
   }
 }
 @media (min-width: 1400px) {
